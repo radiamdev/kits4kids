@@ -1,5 +1,4 @@
 'use client'
-import React from 'react'
 import { useEduorContext } from '@/context/EduorContext'
 import Navlink from './Navlink'
 import SubNavlink from './SubNavlink'
@@ -14,20 +13,7 @@ const NavigationSection = ({ position, btnPosition, navRef }) => {
         >
             <ul className={`navbar-nav ${position}`}>
                 <li className="nav-item">
-                    <a className="nav-link">
-                        Home <i className="fa fa-angle-down"></i>
-                    </a>
-                    <ul className="tf__droap_menu">
-                        <li>
-                            <SubNavlink href="/">home 1</SubNavlink>
-                        </li>
-                        <li>
-                            <SubNavlink href="/home-2">home 2</SubNavlink>
-                        </li>
-                        <li>
-                            <SubNavlink href="/home-3">home 3</SubNavlink>
-                        </li>
-                    </ul>
+                    <a href="/" className="nav-link">Home</a>
                 </li>
                 <li className="nav-item">
                     <Navlink href="/about">about us</Navlink>
