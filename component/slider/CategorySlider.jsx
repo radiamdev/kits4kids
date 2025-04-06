@@ -2,6 +2,7 @@
 import React from 'react'
 import { services } from '@/data/Data'
 import Slider from 'react-slick'
+import Link from 'next/link'
 
 const CategorySlider = () => {
     return (
@@ -47,16 +48,21 @@ const CategorySlider = () => {
         >
             {services.map((item) => (
                 <div className="col-xl-3" key={item.id}>
-                    <div className={`tf__popular_service_single ${item.color}`}>
-                        <span>
-                            <i className={item.iClassName}></i>
-                        </span>
-                        <h3>{item.title}</h3>
-                        <p>{item.desc}</p>
-                        <a href="#">
-                            <i className="fas fa-long-arrow-right"></i>
-                        </a>
-                    </div>
+                    <Link
+                        href={item.link}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                    >
+                        <div
+                            className={`tf__popular_service_single ${item.color}`}
+                        >
+                            <span>
+                                <i className={item.iClassName}></i>
+                            </span>
+                            <h3>{item.title}</h3>
+                            <p>{item.desc}</p>
+                        </div>
+                    </Link>
                 </div>
             ))}
         </Slider>

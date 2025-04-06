@@ -1,5 +1,4 @@
 'use client'
-import React from 'react'
 import CategorySlider from '../slider/CategorySlider'
 
 const CategorySection3 = () => {
