@@ -7,8 +7,7 @@ import ContactSection from '@/component/contact/ContactSection'
 import ContactSection2 from '@/component/contact/ContactSection2'
 import CounterSection from '@/component/counter/CounterSection'
 import CourseSection2 from '@/component/course/CourseSection2'
-import FooterSection2 from '@/component/footer/FooterSection2'
-import VideoModal from '@/component/modal/VideoModal'
+import FooterSection from '@/component/footer/FooterSection'
 import NavbarSection from '@/component/navbar/NavbarSection'
 import TeamSection from '@/component/team/TeamSection'
 import TopbarSection from '@/component/topbar/TopbarSection'
@@ -34,11 +33,10 @@ export default function Home() {
             <ContactSection2 />
             <ActivitySection2 style="tf__activities_3 tf__activities_slider_area mt_100 pt_95 pb_100" />
             <BlogSection2 />
-            <FooterSection2
+            <FooterSection
                 style="tf__footer_3"
                 logo="images/footer_logo3.png"
             />
-            <VideoModal />
             <ScrollToTopButton style="style-3" />
         </div>
     )
