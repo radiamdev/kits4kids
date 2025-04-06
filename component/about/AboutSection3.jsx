@@ -1,5 +1,3 @@
-import React from 'react'
-
 const AboutSection3 = ({ style }) => {
     return (
         <div className={`${style} tf__about_2_area`}>
@@ -22,23 +20,25 @@ const AboutSection3 = ({ style }) => {
                                 />
                             </div>
                             <p>
-                                <span>24+</span> Years of Experience
+                                <span>15+</span> Years of Experience
                             </p>
                         </div>
                     </div>
                     <div className="col-xl-6 col-lg-6 wow fadeInRight">
                         <div className="tf__about_2_text">
                             <div className="tf__heading_area tf__heading_area_left mb_25">
-                                <h5>OUR About Us</h5>
+                                <h5>About Us</h5>
                                 <h2>
-                                    Complete About Students University
-                                    Education.
+                                    The First Pearson BTEC Center in Madagascar
                                 </h2>
                             </div>
                             <p>
-                                Business tailored it design, management &
-                                support services business agency elit, sed do
-                                eiusmod tempor.{' '}
+                                At Kits4Kids International, we aim to provide
+                                international quality and standard education to
+                                our students as we believe that we are raising
+                                the next generation of leaders and global
+                                citizens, that today’s world and the world of
+                                tomorrow needs.
                             </p>
                             <ul>
                                 <li>
@@ -50,10 +50,11 @@ const AboutSection3 = ({ style }) => {
                                         />
                                     </div>
                                     <div className="text">
-                                        <h4>Successflly Trained</h4>
+                                        <h4>Kindergarten</h4>
                                         <p>
-                                            Business tailored it design,
-                                            management support services.
+                                            Our Kindergarten program at
+                                            Kits4Kids International is designed
+                                            for students aged 5 years old.
                                         </p>
                                     </div>
                                 </li>
@@ -66,10 +67,11 @@ const AboutSection3 = ({ style }) => {
                                         />
                                     </div>
                                     <div className="text">
-                                        <h4>Education Growth</h4>
+                                        <h4>Primary</h4>
                                         <p>
-                                            Business tailored it design,
-                                            management support services.
+                                            Our Primary program at Kits4Kids
+                                            International, from Grade 1 to Grade
+                                            5.
                                         </p>
                                     </div>
                                 </li>
@@ -82,10 +84,12 @@ const AboutSection3 = ({ style }) => {
                                         />
                                     </div>
                                     <div className="text">
-                                        <h4>Students Trained</h4>
+                                        <h4>Junior School</h4>
                                         <p>
-                                            Business tailored it design,
-                                            management support services.
+                                            The Kits4Kids Junior School (KJS)
+                                            program for Grade 6 (KJS Year 1) to
+                                            Grade 10 (KJS Year 5) is hands-on
+                                            and inquiry-based.
                                         </p>
                                     </div>
                                 </li>
@@ -98,23 +102,16 @@ const AboutSection3 = ({ style }) => {
                                         />
                                     </div>
                                     <div className="text">
-                                        <h4>Successflly Trained</h4>
+                                        <h4>Senior High School</h4>
                                         <p>
-                                            Business tailored it design,
-                                            management support services.
+                                            The SH (Senior High) program at
+                                            Kits4Kids International focuses on
+                                            Leadership Mastery and Career
+                                            Readiness.
                                         </p>
                                     </div>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                    <div className="col-12 mt_110 xs_mt_100 wow fadeInUp">
-                        <div className="tf__about_us_counter d-flex flex-wrap align-items-center">
-                            <p>
-                                <span className="counter">27,0000</span> More
-                                Students courde youn do best !
-                            </p>
-                            <a href="#">Export All</a>
                         </div>
                     </div>
                 </div>
