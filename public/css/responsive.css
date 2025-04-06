@@ -195,9 +195,9 @@
         border-top-right-radius: 35px;
         border-bottom-left-radius: 35px;
     }
-
+    
     .tf__scroll_btn {
-        right: 0;
+        right: 30px;
     }
 
     .tf__faq_page::after {
@@ -1255,7 +1255,7 @@
 
     /* scroll button start */
     .tf__scroll_btn {
-        right: -15px;
+        right: 80px;
     }
 
     /* scroll button end */
@@ -2027,7 +2027,7 @@
 
     /* scroll button start */
     .tf__scroll_btn {
-        right: -15px;
+        right: 80px;
     }
 
     /* scroll button end */

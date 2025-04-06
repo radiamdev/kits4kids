@@ -1,5 +1,6 @@
 'use client'
 import React, { useEffect, useState } from 'react'
+import { IoIosArrowBack } from 'react-icons/io'
 
 const ScrollToTopButton = ({ style }) => {
     const [isVisible, setIsVisible] = useState(false)
@@ -36,14 +37,12 @@ const ScrollToTopButton = ({ style }) => {
     return (
         <div>
             {isVisible && (
-                <div
+                <button
                     className={`tf__scroll_btn ${style}`}
-                    role="button"
                     onClick={scrollToTop}
                 >
-                    {' '}
-                    go to top{' '}
-                </div>
+                    <IoIosArrowBack />
+                </button>
             )}
         </div>
     )
