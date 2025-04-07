@@ -24,7 +24,6 @@ export default function Home() {
             <BannerSection3 />
             <CategorySection3 />
             <AboutSection3 style="about_3 pb_100" />
-            <CourseSection2 />
             <TeamSection style="tf__team_3 pt_250 pb_100" />
             <ContactSection2 />
             <ActivitySection2 style="tf__activities_3 tf__activities_slider_area mt_100 pt_95 pb_100" />

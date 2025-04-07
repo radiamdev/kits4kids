@@ -1960,6 +1960,9 @@ button {
     margin-bottom: 5px;
     max-width: 75%;
 }
+.tf__activities_item_min {
+    min-height: 380px
+}
 
 .tf__activities_item {
     border: 1px solid #ddd;
@@ -1974,7 +1977,6 @@ button {
     -moz-transition: all linear 0.3s;
     -ms-transition: all linear 0.3s;
     -o-transition: all linear 0.3s;
-    min-height: 380px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -6298,6 +6300,11 @@ select.select_js.form-select {
 =================================== */
 .tf__pricacy_policy {
     margin-bottom: -20px;
+}
+.tf__pricacy_policy_text h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
 .tf__pricacy_policy_text h3 {
