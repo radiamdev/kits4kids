@@ -1,7 +1,7 @@
 import AboutSection3 from '@/component/about/AboutSection3'
 import ActivitySection2 from '@/component/activity/ActivitySection2'
 import BannerSection3 from '@/component/banner/BannerSection3'
-import BlogSection2 from '@/component/blog/BlogSection2'
+import OurCurriculum from '@/component/blog/OurCurriculum'
 import CategorySection3 from '@/component/category/CategorySection3'
 import ContactSection2 from '@/component/contact/ContactSection2'
 import CourseSection2 from '@/component/course/CourseSection2'
@@ -28,7 +28,7 @@ export default function Home() {
             <TeamSection style="tf__team_3 pt_250 pb_100" />
             <ContactSection2 />
             <ActivitySection2 style="tf__activities_3 tf__activities_slider_area mt_100 pt_95 pb_100" />
-            <BlogSection2 />
+            <OurCurriculum />
             <FooterSection
                 style="tf__footer_3"
                 logo="images/footer_logo3.png"

@@ -105,7 +105,7 @@
     }
 
     .tf__heading_area h2 {
-        font-size: 37px;
+        font-size: 20px;
     }
 
     .tf__single_category_text h3 {
@@ -482,7 +482,7 @@
     }
 
     .tf__heading_area h2 {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .tf__about_top_text_center {
@@ -1855,7 +1855,7 @@
 
     /* categories start */
     .tf__heading_area h2 {
-        font-size: 30px;
+        font-size: 18px;
     }
 
     /* categories end */
@@ -3713,6 +3713,6 @@
         font-size: 15px;
     }
     .tf__heading_area h2 {
-        font-size: 30px;
+        font-size: 16px;
     }
 }

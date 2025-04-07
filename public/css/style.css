@@ -110,7 +110,7 @@ button {
 }
 
 :root {
-    --colorPrimary: #ff7f46;
+    --colorPrimary: #0ef511;
     --colorBlue: #4582ff;
     --colorGreen: #0ef511;
     --colorBlack: #0f2239;
@@ -292,8 +292,8 @@ button {
 }
 
 .tf__heading_area h2 {
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 500;
     margin-top: 15px;
     text-transform: capitalize;
 }
@@ -604,7 +604,7 @@ button {
 .tf__droap_menu li a:hover {
     color: var(--colorPrimary);
     padding-left: 25px;
-    background: #ff7f460f;
+    background: #0ef5110f;
 }
 
 .tf__droap_menu li a.active::after,
@@ -935,19 +935,19 @@ button {
 }
 
 .tf__single_category.orange .tf__single_category_icon {
-    background: #ff7f46;
+    background: #0ef511;
 }
 
 .tf__single_category.orange .tf__single_category_text {
-    border-color: #ff7f46;
+    border-color: #0ef511;
 }
 
 .tf__single_category.orange:hover .tf__single_category_text::after {
-    background: #ff7f46;
+    background: #0ef511;
 }
 
 .tf__single_category.orange:hover .tf__single_category_icon {
-    color: #ff7f46;
+    color: #0ef511;
 }
 
 .tf__single_category.red .tf__single_category_icon {
@@ -1277,7 +1277,7 @@ button {
 }
 
 .tf__single_event_img .event_category.orange {
-    background: #ff7f46;
+    background: #0ef511;
 }
 
 .tf__single_event_img .event_category.green {
@@ -1605,7 +1605,7 @@ button {
 }
 
 .accordion-item.orange button::before {
-    background: #ff7f46;
+    background: #0ef511;
 }
 
 .accordion-item.green button::before {
@@ -1792,11 +1792,11 @@ button {
 }
 
 .tf__work_single.orange::after {
-    background: #ff7f46;
+    background: #0ef511;
 }
 
 .tf__work_single.orange a {
-    color: #ff7f46;
+    color: #0ef511;
 }
 
 .tf__work_single.green::after {
@@ -1965,7 +1965,7 @@ button {
     border: 1px solid #ddd;
     background: var(--colorWhite);
     text-align: center;
-    padding: 40px;
+    padding: 20px;
     border-top-right-radius: 70px;
     border-bottom-left-radius: 70px;
     margin-top: 25px;
@@ -1974,6 +1974,11 @@ button {
     -moz-transition: all linear 0.3s;
     -ms-transition: all linear 0.3s;
     -o-transition: all linear 0.3s;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .tf__activities_item span {
@@ -2008,11 +2013,11 @@ button {
 }
 
 .tf__activities_item.orange span {
-    background: #ff7f46;
+    background: #0ef511;
 }
 
 .tf__activities_item.orange:hover {
-    border: 1px dashed #ff7f46;
+    border: 1px dashed #0ef511;
 }
 
 .tf__activities_item.green span {
@@ -2036,6 +2041,27 @@ button {
     height: 730px;
     margin-left: 45px;
 }
+
+.description {
+    max-height: 6em;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.3s ease;
+  }
+
+  .description.expanded {
+    max-height: 1000px;
+  }
+
+  .show-more-btn {
+    margin-top: 10px;
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    padding: 0;
+    font-size: 0.9rem;
+  }
 
 /*----- ACTIVITIES END-----*/
 
@@ -2134,7 +2160,7 @@ button {
 }
 
 .tf__single_blog .category.orange {
-    background: #ff7f46;
+    background: #0ef511;
 }
 
 .tf__single_blog .category.green {
@@ -3808,7 +3834,7 @@ button {
     height: 40px;
     line-height: 40px;
     text-align: center;
-    background: #ff7f4614;
+    background: #0ef51114;
     color: var(--colorPrimary);
     border-radius: 50%;
     transition: all linear 0.3s;
@@ -5473,7 +5499,7 @@ select.select_js.form-select {
 }
 
 .tf__activities_3 .tf__activities_item.orange {
-    border-color: #ff7f466b !important;
+    border-color: #0ef5116b !important;
 }
 
 .tf__activities_3 .tf__activities_item.blue {
@@ -6566,7 +6592,7 @@ section.tf__counter_3 {
     }
 
     .tf__heading_area h2 {
-        font-size: 37px;
+        font-size: 24px;
     }
 
     .tf__single_category_text h3 {
@@ -6945,7 +6971,7 @@ section.tf__counter_3 {
     }
 
     .tf__heading_area h2 {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .tf__about_top_text_center {
@@ -7514,7 +7540,7 @@ section.tf__counter_3 {
 
     /* categories start */
     .tf__heading_area h2 {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .tf__single_category_text {
@@ -8320,7 +8346,7 @@ section.tf__counter_3 {
 
     /* categories start */
     .tf__heading_area h2 {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     /* categories end */
@@ -9186,7 +9212,7 @@ section.tf__counter_3 {
     }
 
     .tf__heading_area h2 {
-        font-size: 25px;
+        font-size: 24px;
     }
 
     .tf__single_category_icon {
@@ -10178,6 +10204,6 @@ section.tf__counter_3 {
         font-size: 15px;
     }
     .tf__heading_area h2 {
-        font-size: 30px;
+        font-size: 24px;
     }
 }

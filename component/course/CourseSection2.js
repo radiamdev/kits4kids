@@ -1,6 +1,5 @@
 import { courseDataArray } from '@/data/Data'
 import Link from 'next/link'
-import React from 'react'
 
 const CourseSection2 = () => {
     return (

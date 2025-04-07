@@ -13,56 +13,34 @@ const NavigationSection = ({ position, btnPosition, navRef }) => {
         >
             <ul className={`navbar-nav ${position}`}>
                 <li className="nav-item">
-                    <a href="/" className="nav-link">Home</a>
+                    <a href="/" className="nav-link">
+                        Home
+                    </a>
                 </li>
                 <li className="nav-item">
-                    <Navlink href="/about">about us</Navlink>
+                    <Navlink href="/about-us">about us</Navlink>
                 </li>
                 <li className="nav-item">
-                    <Navlink href="/courses">courses</Navlink>
+                    <Navlink href="/programs">programs</Navlink>
                 </li>
                 <li className="nav-item">
-                    <Navlink href="/blog">blog</Navlink>
+                    <Navlink href="/contact">contact</Navlink>
                 </li>
                 <li className="nav-item">
                     <a className="nav-link">
-                        pages <i className="fa fa-angle-down"></i>
+                        Menu <i className="fa fa-angle-down"></i>
                     </a>
                     <ul className="tf__droap_menu">
+                        
                         <li>
-                            <SubNavlink href="/courses/development-theory-learn">
-                                courses details
-                            </SubNavlink>
-                        </li>
-                        <li>
-                            <SubNavlink href="/blog/learn-with-these-award-winning-best-blog-collage-courses">
-                                blog details
-                            </SubNavlink>
-                        </li>
-                        <li>
-                            <SubNavlink href="/events">event</SubNavlink>
-                        </li>
-                        <li>
-                            <SubNavlink href="/events/outdoor-this-games">
-                                event details
-                            </SubNavlink>
+                            <SubNavlink href="/events">events</SubNavlink>
                         </li>
                         <li>
                             <SubNavlink href="/team">team</SubNavlink>
                         </li>
-                        <li>
-                            <SubNavlink href="/team/john-smith">
-                                team details{' '}
-                            </SubNavlink>
-                        </li>
+                        
                         <li>
                             <SubNavlink href="/faq">FAQs</SubNavlink>
-                        </li>
-                        <li>
-                            <SubNavlink href="/sign-in">sign in</SubNavlink>
-                        </li>
-                        <li>
-                            <SubNavlink href="/sign-up">sign up</SubNavlink>
                         </li>
                         <li>
                             <SubNavlink href="/terms-condition">
@@ -75,9 +53,6 @@ const NavigationSection = ({ position, btnPosition, navRef }) => {
                             </SubNavlink>
                         </li>
                     </ul>
-                </li>
-                <li className="nav-item">
-                    <Navlink href="/contact">contact</Navlink>
                 </li>
                 {btnPosition ? null : (
                     <li className="nav-item">
