@@ -31,32 +31,25 @@ const NavigationSection = ({ position, btnPosition, navRef }) => {
                         Menu <i className="fa fa-angle-down"></i>
                     </a>
                     <ul className="tf__droap_menu">
-                        
-                        <li>
-                            <SubNavlink href="/events">events</SubNavlink>
-                        </li>
                         <li>
                             <SubNavlink href="/team">team</SubNavlink>
                         </li>
-                        
+                        <li>
+                            <SubNavlink href="/our-fees">our fees</SubNavlink>
+                        </li>
                         <li>
                             <SubNavlink href="/faq">FAQs</SubNavlink>
                         </li>
                         <li>
-                            <SubNavlink href="/terms-condition">
-                                terms and condition
-                            </SubNavlink>
-                        </li>
-                        <li>
-                            <SubNavlink href="/privacy-policy">
-                                privacy policy
+                            <SubNavlink href="/documents">
+                                Documents and policies
                             </SubNavlink>
                         </li>
                     </ul>
                 </li>
                 {btnPosition ? null : (
                     <li className="nav-item">
-                        <a className="nav-link common_btn" href="#">
+                        <a className="nav-link common_btn" href="mailto:enquiry@kits4kidsmada.org">
                             LEARN MORE
                         </a>
                     </li>

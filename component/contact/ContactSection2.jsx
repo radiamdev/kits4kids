@@ -1,6 +1,4 @@
 'use client'
-import React from 'react'
-import { Form } from 'react-bootstrap'
 
 const ContactSection2 = () => {
     return (
@@ -11,16 +9,12 @@ const ContactSection2 = () => {
                         <div className="col-xl-6 col-lg-6 wow fadeInLeft">
                             <div className="tf__contact_3_text">
                                 <h2>
-                                    Sing Up to <span>Complete</span> Students
-                                    University Education.
+                                    Empowering you to <span>reach</span> your potential
                                 </h2>
                                 <p>
-                                    Business tailored it design, management &
-                                    support services business agency elit, sed
-                                    do eiusmod tempoIn capacity social science,
-                                    agency is defined as the
+                                Together as a family, we all strive to empower each other to reach our fullest potential, growing holistically through different activities , experiences and programs.
                                 </p>
-                                <a href="#">apply now</a>
+                                <a href="#!">apply now</a>
                             </div>
                         </div>
                         <div className="col-xl-6 col-lg-6 wow fadeInRight">
@@ -44,21 +38,10 @@ const ContactSection2 = () => {
                                             placeholder="Phone Number*"
                                         />
                                     </div>
-                                    <div className="col-12">
-                                        <Form.Select className="select_js">
-                                            <option value="">
-                                                Select a Course
-                                            </option>
-                                            <option value="">Red</option>
-                                            <option value="">Black</option>
-                                            <option value="">Orange</option>
-                                            <option value="">Rose Gold</option>
-                                            <option value="">Pink</option>
-                                        </Form.Select>
-                                    </div>
+                                    
                                     <div className="col-12">
                                         <button type="submit">
-                                            Send Request
+                                            Send message
                                         </button>
                                     </div>
                                 </div>

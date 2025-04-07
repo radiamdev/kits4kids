@@ -41,7 +41,7 @@ const AllBlogSection = () => {
                             key={item.id}
                         >
                             <div
-                                className={`tf__activities_item ${item.color}`}
+                                className={`tf__activities_item tf__activities_item_min ${item.color}`}
                             >
                                 <span>
                                     {' '}

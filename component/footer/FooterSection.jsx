@@ -30,18 +30,30 @@ const FooterSection = () => {
                                 </p>
                                 <ul className="d-flex flex-wrap">
                                     <li>
-                                        <a href="https://www.facebook.com/kits4kidsintmada" target="_blank" rel='noreferrer noopener'>
+                                        <a
+                                            href="https://www.facebook.com/kits4kidsintmada"
+                                            target="_blank"
+                                            rel="noreferrer noopener"
+                                        >
                                             <FaFacebook />
                                         </a>
                                     </li>
 
                                     <li>
-                                        <a href="https://www.instagram.com/kits4kidsint/" target="_blank" rel='noreferrer noopener'>
+                                        <a
+                                            href="https://www.instagram.com/kits4kidsint/"
+                                            target="_blank"
+                                            rel="noreferrer noopener"
+                                        >
                                             <FaInstagram />
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="mailto:enquiry@kits4kidsmada.org" target="_blank" rel='noreferrer noopener'>
+                                        <a
+                                            href="mailto:enquiry@kits4kidsmada.org"
+                                            target="_blank"
+                                            rel="noreferrer noopener"
+                                        >
                                             <MdEmail />
                                         </a>
                                     </li>
@@ -95,19 +107,43 @@ const FooterSection = () => {
                         </div>
                         <div className="col-xl-2 col-sm-10 col-md-5 col-lg-5">
                             <div className="tf__footer_content xs_mt_50">
-                                <h3>Menu</h3>
+                                <h3>Registration</h3>
                                 <ul>
                                     <li>
-                                        <Link href="/">Home</Link>
+                                        <Link
+                                            href="https://in1eucvj.forms.app/registration-formcurrent-1-1"
+                                            target="_blank"
+                                            rel="noreferrer noopener"
+                                        >
+                                            Current student registration
+                                        </Link>
                                     </li>
                                     <li>
-                                        <Link href="/about-us">About us</Link>
+                                        <Link
+                                            href="https://in1eucvj.forms.app/new-students-registration-form-1"
+                                            target="_blank"
+                                            rel="noreferrer noopener"
+                                        >
+                                            New student registration
+                                        </Link>
                                     </li>
                                     <li>
-                                        <Link href="/programs">Programs</Link>
+                                        <Link
+                                            href="https://kits4kids.managebac.com/login"
+                                            target="_blank"
+                                            rel="noreferrer noopener"
+                                        >
+                                            ManageBac access
+                                        </Link>
                                     </li>
                                     <li>
-                                        <Link href="/contact">Contact us</Link>
+                                        <Link
+                                            href="https://darwin.dnshostnetwork.com/roundcube/?_task=mail&_mbox=INBOX"
+                                            target="_blank"
+                                            rel="noreferrer noopener"
+                                        >
+                                            Webmail access
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
