@@ -10,6 +10,7 @@ export default function Documents() {
         <Layout>
             <BreadcrumbSection title="DOCUMENTS AND POLICIES" header="Documents & Policies" />
             {/* <OurFeesSection /> */}
+            <h2 className='pt_100'>Coming soon ...</h2>
             
         </Layout>
     )

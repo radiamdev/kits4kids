@@ -1,16 +1,18 @@
-import AboutSection3 from '@/component/about/AboutSection3'
-import ActivitySection2 from '@/component/activity/ActivitySection2'
-import BannerSection3 from '@/component/banner/BannerSection3'
-import OurCurriculum from '@/component/blog/OurCurriculum'
-import CategorySection3 from '@/component/category/CategorySection3'
-import ContactSection2 from '@/component/contact/ContactSection2'
-import CourseSection2 from '@/component/course/CourseSection2'
-import FooterSection from '@/component/footer/FooterSection'
-import NavbarSection from '@/component/navbar/NavbarSection'
-import TeamSection from '@/component/team/TeamSection'
-import TopbarSection from '@/component/topbar/TopbarSection'
-import ScrollToTopButton from '@/component/utils/ScrollToTopButton'
+import React from 'react'
+
 import { images } from '@/constants'
+
+import TopbarSection from '@/component/topbar/TopbarSection'
+import NavbarSection from '@/component/navbar/NavbarSection'
+import BannerSection3 from '@/component/banner/BannerSection3'
+import CategorySection3 from '@/component/category/CategorySection3'
+import AboutSection3 from '@/component/about/AboutSection3'
+import TeamSection from '@/component/team/TeamSection'
+import ContactSection2 from '@/component/contact/ContactSection2'
+import ActivitySection2 from '@/component/activity/ActivitySection2'
+import OurCurriculum from '@/component/blog/OurCurriculum'
+import FooterSection from '@/component/footer/FooterSection'
+import ScrollToTopButton from '@/component/utils/ScrollToTopButton'
 
 export const metadata = {
     title: 'Kits4Kids',

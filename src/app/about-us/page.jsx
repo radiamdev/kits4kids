@@ -21,7 +21,7 @@ export default function About() {
             <section className="tf__about_us_page mt_195 xs_mt_100">
                 <AboutSection3 style="" />
                 <PopularServiceSection2 />
-                <CourseSection style="tf__popular_courses" />
+                {/* <CourseSection style="tf__popular_courses" /> */}
                 <FaqSection img="images/faq_img_2.jpg" />
                 <ActivitySection2 style="tf__activities_slider_area pt_95 pb_100" />
                 <BlogSection />
