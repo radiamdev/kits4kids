@@ -1,5 +1,5 @@
 'use client'
-import { blogData, courseDataArray, eventData, teamData } from '@/data/Data'
+import { blogData, courseDataArray, eventData, teamData } from '../data/Data'
 import { createContext, useContext, useEffect, useState } from 'react'
 
 const EduorContext = createContext()

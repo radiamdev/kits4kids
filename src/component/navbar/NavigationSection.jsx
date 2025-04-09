@@ -27,8 +27,8 @@ const NavigationSection = ({ position, btnPosition, navRef }) => {
                     <Navlink href="/contact">contact</Navlink>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link">
-                        Menu <i className="fa fa-angle-down"></i>
+                    <a className="nav-link d-flex align-items-center gap-1">
+                        More <i className="fa fa-angle-down"></i>
                     </a>
                     <ul className="tf__droap_menu">
                         <li>
@@ -50,14 +50,14 @@ const NavigationSection = ({ position, btnPosition, navRef }) => {
                 {btnPosition ? null : (
                     <li className="nav-item">
                         <a className="nav-link common_btn" href="mailto:enquiry@kits4kidsmada.org">
-                            LEARN MORE
+                            Contact Us
                         </a>
                     </li>
                 )}
             </ul>
             {btnPosition ? (
-                <a className="common_btn_2 ms-auto" href="#">
-                    learn more
+                <a className="common_btn_2 ms-auto" href="mailto:enquiry@kits4kidsmada.org">
+                    Contact Us
                 </a>
             ) : null}
         </div>
