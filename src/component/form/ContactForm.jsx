@@ -1,64 +1,114 @@
 'use client'
-import { useEduorContext } from '@/context/EduorContext'
+
 import React, { useState } from 'react'
 import { toast } from 'react-toastify'
+import { useFormik } from 'formik'
+import { ContactSchema } from '@/lib/utils'
 
 const ContactForm = () => {
-    const { isValidEmail } = useEduorContext()
-    const [name, setName] = useState('')
-    const [email, setEmail] = useState('')
-    const [message, setMessage] = useState('')
+    const [isLoading, setIsLoading] = useState(false)
 
-    const handleFormSubmit = (e) => {
-        e.preventDefault()
+    const formik = useFormik({
+        initialValues: {
+            name: '',
+            email: '',
+            subject: '',
+            message: '',
+            honeypot: '', // anti-spam
+        },
+        validationSchema: ContactSchema,
+        onSubmit: async (values, { resetForm }) => {
+            if (values.honeypot) {
+                toast.error("Erreur d'envoi")
+                return
+            }
 
-        if (!name || !email || !message) {
-            toast.error('Please fill out all fields.', {
-                position: 'top-right',
-            })
-        } else if (!isValidEmail(email)) {
-            toast.warning('Please provide a valid email address.', {
-                position: 'top-right',
-            })
-        } else {
-            // If the form is successfully submitted, show a success toast
-            toast.success('Form submitted successfully!', {
-                position: 'top-right',
-            })
-            setName('')
-            setEmail('')
-            setMessage('')
-        }
-    }
+            setIsLoading(true)
+            try {
+                const res = await fetch('http://localhost:3001/send-email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(values),
+                })
+
+                if (res.ok) {
+                    toast.success('✉️ Message envoyé avec succès !')
+                    resetForm()
+                } else {
+                    toast.error('❌ Une erreur est survenue !')
+                }
+            } catch (err) {
+                console.error(err)
+                toast.error('⚠️ Erreur de connexion au serveur')
+            } finally {
+                setIsLoading(false)
+            }
+        },
+    })
 
     return (
-        <form onSubmit={handleFormSubmit}>
+        <form onSubmit={formik.handleSubmit}>
             <div className="row">
                 <div className="col-xl-6">
                     <input
                         type="text"
-                        placeholder="Name"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
+                        name="name"
+                        placeholder="Name*"
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                        value={formik.values.name}
                     />
+                    {formik.touched.name && formik.errors.name && (
+                        <p className="text-danger">{formik.errors.name}</p>
+                    )}
                 </div>
                 <div className="col-xl-6">
                     <input
-                        type="email"
-                        placeholder="Email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
+                        type="text"
+                        name="subject"
+                        placeholder="Subject*"
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                        value={formik.values.subject}
                     />
+                    {formik.touched.subject && formik.errors.subject && (
+                        <p className="text-danger">{formik.errors.subject}</p>
+                    )}
+                </div>
+                <div className="col-xl-12">
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Email*"
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                        value={formik.values.email}
+                    />
+                    {formik.touched.email && formik.errors.email && (
+                        <p className="text-danger">{formik.errors.email}</p>
+                    )}
                 </div>
                 <div className="col-xl-12">
                     <textarea
-                        rows={8}
+                        rows={4}
+                        name="message"
                         placeholder="Message"
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
-                    ></textarea>
-                    <button type="submit" className="common_btn_2">
-                        SEND MESSAGE
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                        value={formik.values.message}
+                    />
+                    {formik.touched.message && formik.errors.message && (
+                        <p className="text-danger">{formik.errors.message}</p>
+                    )}
+
+                    <button
+                        type="submit"
+                        disabled={isLoading}
+                        className="common_btn_2"
+                    >
+                        {isLoading ? 'Sending...' : 'Send message'}
                     </button>
                 </div>
             </div>

@@ -329,7 +329,7 @@ button {
 .tf__breadcrumb .container::after {
     position: absolute;
     content: '';
-    background: url(/images/breadcrumb_bg_img.png);
+    background: url(/images/515x530_breadcrumb.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -2242,7 +2242,7 @@ button {
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    background-image: url(/images/footer_bg.jpg);
+    background-image: url(/images/1600x650_banner_footer.png);
 }
 
 .tf__footer_overlay {
@@ -2638,7 +2638,7 @@ button {
 }
 
 .tf__popular_service_single {
-    background: url(/images/popular_ervices_bg.jpg);
+    background: url(/images/280x400_service2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

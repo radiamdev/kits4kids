@@ -7,14 +7,14 @@ const AboutSection3 = ({ style }) => {
                         <div className="tf__about_2_img">
                             <div className="tf__about_small">
                                 <img
-                                    src="images/about_2_img_2.jpg"
+                                    src="images/150x150_about_us.png"
                                     alt="about us"
                                     className="img-fluid w-100"
                                 />
                             </div>
                             <div className="tf__about_large">
                                 <img
-                                    src="images/about_2_img_1.jpg"
+                                    src="images/550.png"
                                     alt="about us"
                                     className="img-fluid w-100"
                                 />
@@ -28,7 +28,7 @@ const AboutSection3 = ({ style }) => {
                         <div className="tf__about_2_text">
                             <div className="tf__heading_area tf__heading_area_left mb_25">
                                 <h5>About Us</h5>
-                                <h2>
+                                <h2 className="mb-2">
                                     The First Pearson BTEC Center in Madagascar
                                 </h2>
                             </div>

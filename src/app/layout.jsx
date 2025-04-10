@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import 'react-toastify/dist/ReactToastify.css'
 import '@/styles/css/style.css'
-import { ToastContainer } from 'react-toastify'
+import { ToastContainer, Bounce } from 'react-toastify'
 
 export default function RootLayout({ children }) {
     return (
@@ -13,7 +13,19 @@ export default function RootLayout({ children }) {
             <EduorProvider>
                 <body>
                     {children}
-                    <ToastContainer />
+                    <ToastContainer
+                        position="bottom-right"
+                        autoClose={5000}
+                        hideProgressBar={false}
+                        newestOnTop={false}
+                        closeOnClick={false}
+                        rtl={false}
+                        pauseOnFocusLoss
+                        draggable
+                        pauseOnHover
+                        theme="light"
+                        transition={Bounce}
+                    />
                 </body>
             </EduorProvider>
         </html>
