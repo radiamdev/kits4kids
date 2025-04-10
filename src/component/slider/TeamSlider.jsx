@@ -53,7 +53,7 @@ const TeamSlider = () => {
                             <img
                                 src={item.imgSrc}
                                 alt={item.name}
-                                className="img-fluid w-100 object-fit-fill"
+                                className="img-fluid w-100 object-fit-cover"
                             />
                             <ul>
                                 <li>

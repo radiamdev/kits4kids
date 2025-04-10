@@ -9,7 +9,6 @@ const ContactPageSection = () => {
                         <div className="tf__contact_form">
                             <div className="tf__heading_area tf__heading_area_left mb_25">
                                 <h5>Contact Us</h5>
-                                <h2>Get Our Contact Now.</h2>
                             </div>
                             <p>
                                 Together as a family, we all strive to empower
