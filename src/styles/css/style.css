@@ -4267,14 +4267,15 @@ button {
     position: relative;
     z-index: 999;
 }
-
+/* **********************************Menu desktop and mobile radiamdev */
 .main_menu_2 .main_menu_2_area {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 65px;
-    background: var(--colorWhite);
+    background: #0c0;
 }
 
 .main_menu_2 .navbar-brand {
@@ -5081,8 +5082,23 @@ button {
     margin: 0;
     height: auto;
     background-position: center top !important;
-    background-image: url(/images/banner_home.jpeg);
-}
+    background-image: url(/images/banner_home.jpeg); /* Image par défaut (desktop) */
+    background-size: cover;
+  }
+  
+  /* Image pour mobile */
+  @media (max-width: 768px) {
+    .tf__banner_3 {
+      background-image: url(/images/515x530_about.png);
+    }
+  }
+  
+  /* Image pour tablette */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .tf__banner_3 {
+      background-image: url(/images/banner_home_tablette.jpeg);
+    }
+  }  
 
 .home_3 .tf__banner_text {
     margin-top: 115px;
@@ -9084,8 +9100,8 @@ section.tf__counter_3 {
     ==================================*/
     /* menu start */
     .main_menu {
-        height: 90px;
-        background: var(--colorWhite);
+        height: 100px;
+        background: var(--colorPrimary);
     }
     section .container {
         padding: 0 20px;
@@ -10079,7 +10095,7 @@ section.tf__counter_3 {
     ==================================*/
     .main_menu_3 {
         position: fixed;
-        top: 50px;
+        top: 25px;
     }
 
     .main_menu_3 .navbar-nav {

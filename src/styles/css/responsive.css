@@ -2490,7 +2490,7 @@
     ==================================*/
     .main_menu_3 {
         position: fixed;
-        top: 50px;
+        top: 10px;
     }
 
     .main_menu_3 .navbar-nav {
