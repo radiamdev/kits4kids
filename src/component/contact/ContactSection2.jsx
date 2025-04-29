@@ -25,7 +25,7 @@ const ContactSection2 = () => {
 
             setIsLoading(true)
             try {
-                const res = await fetch('http://localhost:3001/send-email', {
+                const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

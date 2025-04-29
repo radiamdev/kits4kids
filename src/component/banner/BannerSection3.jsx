@@ -9,10 +9,10 @@ const BannerSection3 = () => {
                     <div className="col-xl-8 col-md-10 col-lg-8">
                         <div className="tf__banner_text wow fadeInUp">
                             <h5>The First Pearson BTEC Center in Madagascar</h5>
-                            <h1>
+                            <h1 className="text-black">
                                 WE BELIEVE EVERY <span>CHILD</span> CAN LEARN
                             </h1>
-                            <p>
+                            <p className="text-white">
                                 Kits4Kids International is an English speaking
                                 school, privately-owned and funded by a Malagasy
                                 citizen, located in the Northern suburb of
